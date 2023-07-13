@@ -7,6 +7,14 @@ $(document).ready(function() {
       scrollTop: $(targetSection).offset().top
     }, 1000);
   });   
+
+  $('div.menu ul li:nth-child(2) a').click(function(e) {
+    e.preventDefault();
+    var targetSection = $(this).attr('href');
+    $('html, body').animate({
+      scrollTop: $(targetSection).offset().top
+    }, 1000);
+  });
   
   $('#top-project').click(function() {
       window.location.href = 'case_study.html';
@@ -51,12 +59,14 @@ $(document).ready(function() {
       });
     });
     
-    $(document).ready(function() {
-      $('.hamburger').click(function() {
-        $(this).toggleClass('active');
-        $('.menu').slideToggle();
-      });
-    });    
+    $('.hamburger').click(function() {
+      $(this).toggleClass('active');
+      $('.menu').slideToggle();
+    });
   
+    $("#mobile-top-project").on('click', function() {
+      window.location.href = "case_study.html";
+    });
+
   });
 

@@ -12,5 +12,10 @@ $(document).ready(function() {
 
   setTimeout(fade, 3000);
 
+  $('.hamburger').click(function() {
+    $(this).toggleClass('active');
+    $('.menu').slideToggle();
+  });
+
 });
 
