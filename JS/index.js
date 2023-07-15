@@ -41,18 +41,14 @@ $(document).ready(function() {
       var $heroImage = $('.hero-image');
       var $welcomeArrow = $('.welcome-arrow');
     
-      // Set opacity to 0 for elements
       $heroH1.css('opacity', 0);
       $heroP.css('opacity', 0);
       $heroImage.css('opacity', 0);
       $welcomeArrow.css('opacity', 0);
     
       $heroH1.animate({ opacity: 1 }, 1500, function() {
-        // Fade in the paragraph after h1 has finished fading in
         $heroP.animate({ opacity: 1 }, 1500, function() {
-          // Fade in the image after the paragraph has finished fading in
           $heroImage.animate({ opacity: 1 }, 2000, function() {
-            // Fade in the welcome arrow after the image has finished fading in
             $welcomeArrow.animate({ opacity: 1 }, 1000);
           });
         });
