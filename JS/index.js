@@ -64,5 +64,9 @@ $(document).ready(function() {
       window.location.href = "case_study.html";
     });
 
+    $(".clickable").on('click', function() {
+      window.location.href = "https://carmenwdesign.github.io/UX_UI_HW_20/";
+    });
+
   });
 
