@@ -8,7 +8,7 @@ $(document).ready(function() {
     }, 1000);
   });   
 
-  $('div.menu ul li:nth-child(2) a').click(function(e) {
+  $('div.menu ul li:nth-child(4) a').click(function(e) {
     e.preventDefault();
     var targetSection = $(this).attr('href');
     $('html, body').animate({
@@ -65,7 +65,7 @@ $(document).ready(function() {
     });
 
     $(".clickable").on('click', function() {
-      window.location.href = "https://carmenwdesign.github.io/UX_UI_HW_20/";
+      window.open ('https://carmenwdesign.github.io/UX_UI_HW_20/');
     });
 
   });
